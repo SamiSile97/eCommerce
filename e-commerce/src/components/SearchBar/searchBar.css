@@ -1,0 +1,19 @@
+.item-card-two {
+    border: 2px solid black;
+    border-radius: 5px;
+    background: #ffb770;
+    height: 400px;
+    width: 300px;
+    justify-content: center;
+    flex-direction: column;
+    margin: 5px;
+  }
+  
+  .item-list-two {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      border: 5px solid black;
+      margin-top: 100px;
+  }

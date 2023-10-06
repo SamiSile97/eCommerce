@@ -1,4 +1,4 @@
-import "./ItemCard.css";
+import "./itemCard.css";
 
 function ItemCard({ item }) {
 

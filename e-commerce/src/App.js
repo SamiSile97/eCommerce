@@ -1,23 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import ItemList from "./components/ItemList/itemList";
+import Header from "./components/Header/header";
+import SearchBar from "./components/SearchBar/searchBar";
+import { useEffect, useState } from "react";
 
 function App() {
+  const [item, setItem] = useState([]);
+
+  useEffect(() => {
+    async function fetchItemCard() {
+      const data = await fetch(`https://fakestoreapi.com/products`);
+      const parsedData = await data.json();
+      setItem(parsedData);
+      console.log(parsedData);
+    }
+    fetchItemCard();
+  }, []);
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header />
+      <SearchBar item={item} />
+      <ItemList item={item} />
     </div>
   );
 }
