@@ -1,0 +1,34 @@
+.itemCard {
+    border: 2px solid black;
+    border-radius: 5px;
+    background: #ffb770;
+    height: 400px;
+    width: 300px;
+    justify-content: center;
+    flex-direction: column;
+    margin: 5px;
+  }
+  
+  img {
+    height: 100px;
+    width: 100px;
+    margin-left: 5px;
+  }
+  
+  .imgDiv {
+    background-color: white;
+    height: 70px;
+    width: 60%;
+    align-self: center;
+    padding: 30px;
+    border-radius: 5px;
+    justify-content: center;
+  }
+  
+  .itemList {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-top: 100px;
+  }
