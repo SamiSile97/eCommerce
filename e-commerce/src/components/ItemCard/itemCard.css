@@ -4,9 +4,12 @@
     background: #ffb770;
     height: 400px;
     width: 300px;
-    justify-content: center;
-    flex-direction: column;
+    display: flex;
     margin: 5px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
   }
   
   img {
