@@ -16,10 +16,16 @@ function App() {
     }
     fetchItemCard();
   }, []);
-
+  
   return (
     <div className="App">
       <Header />
+      <div className="image-grid">
+        <div className="home"><p className="inner-text">Skincare</p></div>
+        <div className="skincare"><p className="inner-text">Jewelry</p></div>
+        <div className="electronics"><p className="inner-text">Electronics</p></div>
+        <div className="jewelry"><p className="inner-text">Home</p></div>
+      </div>
       <SearchBar item={item} />
       <ItemList item={item} />
     </div>

@@ -2,3 +2,66 @@ input {
   margin-top: 125px;
   margin-left: 650px;
 }
+
+.image-grid {
+  padding-top: 7em;
+  padding-left: 7.5em;
+  height: 80em;
+  width: 80vw;
+  display: grid;
+  grid-template-columns: [first] 50% [second] 25% [third] 25% [fourth];
+  grid-template-rows: [first] 20% [second] 20% [third];
+  gap: 1em;
+}
+
+.home {
+  grid-column: first / span 2;
+  grid-column-end: second;
+  grid-row-start: first;
+  grid-row-end: third;
+  overflow: hidden;
+  object-fit: contain;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)), url(../public/enecta-cannabis-extracts-80wCkpt-IKE-unsplash.jpg);
+  background-size: 36em;
+  background-repeat: no-repeat;
+}
+
+.inner-text {
+  display: flex;
+  padding-left: 0.8em;
+  font-size: 35px;
+  color: white;
+}
+
+.skincare {
+  grid-column-start: second;
+  grid-column-end: third;
+  grid-row-start: first;
+  grid-row-end: third;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)), url(../public/nataliya-melnychuk-5ngCICAXiH0-unsplash.jpg);
+  background-size: 30em;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.electronics {
+  grid-column-start: third;
+  grid-column-end: fourth;
+  grid-row-start: first;
+  grid-row-end: second;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)), url(../public/kiran-ck-LSNJ-pltdu8-unsplash.jpg);
+  background-size: 20em;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.jewelry {
+  grid-column-start: third;
+  grid-column-end: fourth;
+  grid-row-start: second;
+  grid-row-end: third;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)), url(../public/spacejoy-YI2YkyaREHk-unsplash.jpg);
+  background-size: 20em;
+  background-repeat: no-repeat;
+  background-position: center;
+}
