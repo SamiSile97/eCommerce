@@ -5,13 +5,13 @@ import SearchBar from "./components/SearchBar/searchBar";
 import { useEffect, useState } from "react";
 
 function App() {
-  const [item, setItem] = useState([]);
+  const [items, setItems] = useState([]);
 
   useEffect(() => {
     async function fetchItemCard() {
       const data = await fetch(`https://fakestoreapi.com/products`);
       const parsedData = await data.json();
-      setItem(parsedData);
+      setItems(parsedData);
       console.log(parsedData);
     }
     fetchItemCard();
@@ -26,8 +26,8 @@ function App() {
         <div className="electronics"><p className="inner-text">Electronics</p></div>
         <div className="jewelry"><p className="inner-text">Home</p></div>
       </div>
-      <SearchBar item={item} />
-      <ItemList item={item} />
+      <SearchBar item={items} />
+      {/* <ItemList item={items} /> */}
     </div>
   );
 }

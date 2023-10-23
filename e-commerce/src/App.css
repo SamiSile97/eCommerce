@@ -6,11 +6,11 @@ input {
 .image-grid {
   padding-top: 7em;
   padding-left: 7.5em;
-  height: 80em;
+  height: 80vh;
   width: 80vw;
   display: grid;
   grid-template-columns: [first] 50% [second] 25% [third] 25% [fourth];
-  grid-template-rows: [first] 20% [second] 20% [third];
+  grid-template-rows: [first] 50% [second] 50% [third];
   gap: 1em;
 }
 
